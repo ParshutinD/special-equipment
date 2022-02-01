@@ -9,7 +9,13 @@
 .container {
   margin: 0 auto;
   padding: 0 135px;
-  width: 1440px;
+  max-width: 1440px;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 360px;
+  }
 }
 
 .page-body {
@@ -37,7 +43,7 @@ a {
 
 a,
 button {
-  cursor: pointer;
+  cursor: url(../img/cursor.png) 2 2, pointer;
 }
 
 ul,
@@ -75,3 +81,9 @@ input {
     outline: none;
   }
 }
+
+
+
+@media (max-width: $mobile-width){
+    
+};

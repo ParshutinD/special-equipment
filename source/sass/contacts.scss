@@ -1,0 +1,40 @@
+.page-contacts {
+  background-color: $color_bg_grey;
+}
+
+.contacts-block__title {
+  @include Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 88px;
+  padding-top: 80px;
+  padding-bottom: 26px;
+}
+
+.contacts-block__wrapper {
+  background-color: $color_white;
+}
+
+.contacts-block__wrapper-title {
+  @include Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  padding-bottom: 32px;
+  padding-top: 60px;
+}
+
+.contacts-block__list {
+  padding-bottom: 65px;
+}
+
+.contacts-block__item {
+  @include Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 142.4%;
+  color: $color_dark_grey_2;
+}

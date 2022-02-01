@@ -1,0 +1,21 @@
+.our-car-pool__title--equipment {
+  padding-top: 80px;
+  padding-bottom: 26px;
+}
+
+.main-equipment {
+  background-color: $color_bg_grey;
+}
+
+.breadcrumbs {
+  padding-bottom: 32px;
+  @include Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+
+  & a:first-child {
+    text-decoration: underline;
+  }
+}
