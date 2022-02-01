@@ -183,6 +183,9 @@ input:focus {
       position: absolute;
       top: 25px;
       left: 15px; }
+  @media (max-width: 360px) {
+    .page-header__button-menu--closed {
+      left: 310px; } }
 
 .page-header__menu {
   position: absolute;
@@ -195,6 +198,10 @@ input:focus {
   .page-header__menu.page-header__menu--open {
     display: block;
     z-index: 2; }
+  @media (max-width: 360px) {
+    .page-header__menu {
+      width: 360px;
+      left: -316px; } }
 
 .page-header__menu-list {
   padding-top: 65px;
@@ -216,6 +223,15 @@ input:focus {
     border-bottom: 1px solid #343434; }
   .page-header__menu-list li:not(:first-child) {
     padding-top: 21px; }
+  @media (max-width: 360px) {
+    .page-header__menu-list {
+      width: 360px;
+      padding-left: 39px;
+      padding-bottom: 10px;
+      max-height: 590px; }
+      .page-header__menu-list li:not(:last-child) {
+        padding-bottom: 21px;
+        border-bottom: none; } }
 
 .page-header__menu-wrapper {
   padding-left: 0px;
@@ -224,6 +240,9 @@ input:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 360px) {
+    .page-header__menu-wrapper {
+      padding-bottom: 50px; } }
 
 .page-header__menu-inner-wrapper {
   padding-bottom: 47px;
@@ -236,6 +255,11 @@ input:focus {
     font-size: 24px;
     line-height: 29px;
     color: #ffffff; }
+  @media (max-width: 360px) {
+    .page-header__menu-inner-wrapper {
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 0; } }
 
 .info-block .info-block__slider {
   width: 100vw;
@@ -335,7 +359,8 @@ input:focus {
   padding-bottom: 20px; }
   @media (max-width: 360px) {
     .our-car-pool__btn-wrapper {
-      flex-direction: column; } }
+      flex-direction: column;
+      width: 319px; } }
   .our-car-pool__btn-wrapper label {
     width: 584px;
     height: 77px;
@@ -454,6 +479,9 @@ input[type="radio"]:checked + label {
   position: relative;
   width: 1012px;
   height: 623px; }
+  @media (max-width: 360px) {
+    .service__slider {
+      width: 294px; } }
 
 .service__slide {
   background-color: #1d1d1d;
@@ -655,6 +683,9 @@ input[type="radio"]:checked + label {
 .bulk-materials__slider {
   padding-bottom: 185px;
   width: 1012px; }
+  @media (max-width: 360px) {
+    .bulk-materials__slider {
+      width: 294px; } }
 
 .bulk-materials__slide {
   background-color: #ffffff;
@@ -1073,12 +1104,19 @@ input[type="radio"]:checked + label {
 .delivery-block-mySwiper2 {
   height: 416px;
   max-width: 1005px; }
+  @media (max-width: 360px) {
+    .delivery-block-mySwiper2 {
+      max-width: 294px;
+      max-height: 238px; } }
 
 .delivery-block-mySwiper {
   max-height: 92px;
   max-width: 1005px;
   box-sizing: border-box;
   padding: 10px 0; }
+  @media (max-width: 360px) {
+    .delivery-block-mySwiper {
+      max-width: 294px; } }
 
 .delivery-block-mySwiper .delivery-block-slide-thumb-active {
   opacity: 1; }
@@ -1138,6 +1176,10 @@ input[type="radio"]:checked + label {
   line-height: 88px;
   padding-top: 71px;
   padding-bottom: 26px; }
+  @media (max-width: 360px) {
+    .delivery-block__main-title {
+      font-size: 45px;
+      line-height: 55px; } }
 
 .delivery-block__title {
   font-family: "Montserrat", "Tahoma", sans-serif;
@@ -1148,6 +1190,11 @@ input[type="radio"]:checked + label {
   padding-top: 71px;
   padding-bottom: 42px;
   padding-left: 150px; }
+  @media (max-width: 360px) {
+    .delivery-block__title {
+      font-size: 24px;
+      line-height: 29px;
+      padding-left: 0; } }
 
 .delivery-block__subtitle {
   font-family: "Montserrat", "Tahoma", sans-serif;
@@ -1160,6 +1207,11 @@ input[type="radio"]:checked + label {
   max-width: 872px; }
   .delivery-block__subtitle:not(:last-child) {
     padding-bottom: 43px; }
+  @media (max-width: 360px) {
+    .delivery-block__subtitle {
+      font-size: 18px;
+      line-height: 130.4%;
+      padding-left: 0; } }
 
 .delivery-block__price {
   font-family: "Montserrat", "Tahoma", sans-serif;
@@ -1180,6 +1232,10 @@ input[type="radio"]:checked + label {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 150px; }
+  @media (max-width: 360px) {
+    .delivery-block__wrapper {
+      flex-direction: column;
+      align-items: flex-start; } }
 
 .page-contacts {
   background-color: #f6f7f8; }

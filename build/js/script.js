@@ -10,7 +10,7 @@ const slider_info = new Swiper(".info-block__slider", {
 });
 
 const service_slider = new Swiper(".service__slider", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 14,
   slidesPerGroup: 3,
   loop: true,
@@ -19,10 +19,16 @@ const service_slider = new Swiper(".service__slider", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    361: {
+      slidesPerView: 3,
+      spaceBetween: 8,
+    },
+  },
 });
 
 const bulk_materials_slider = new Swiper(".bulk-materials__slider", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 14,
   slidesPerGroup: 3,
   loop: true,
@@ -30,6 +36,12 @@ const bulk_materials_slider = new Swiper(".bulk-materials__slider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    361: {
+      slidesPerView: 3,
+      spaceBetween: 8,
+    },
   },
 });
 
@@ -46,7 +58,7 @@ const feedback_slider = new Swiper(".feedback__slider", {
 });
 
 const partners_slider = new Swiper(".partners__slider", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 14,
   slidesPerGroup: 3,
   loop: true,
@@ -57,23 +69,26 @@ const partners_slider = new Swiper(".partners__slider", {
   },
 
   breakpoints: {
-    360: {
-      slidesPerView: 1,
-      spaceBetween: 8,
-    },
-    1440: {
+    361: {
       slidesPerView: 3,
-      spaceBetween: 14,
+      spaceBetween: 8,
     },
   },
 });
 
 const swiper = new Swiper(".delivery-block-mySwiper", {
   spaceBetween: 10,
-  slidesPerView: 6,
+  slidesPerView: 2,
   freeMode: true,
   watchSlidesProgress: true,
+  breakpoints: {
+    361: {
+      slidesPerView: 6,
+      spaceBetween: 8,
+    },
+  },
 });
+
 const swiper2 = new Swiper(".delivery-block-mySwiper2", {
   spaceBetween: 10,
   navigation: {
@@ -85,6 +100,12 @@ const swiper2 = new Swiper(".delivery-block-mySwiper2", {
   },
   autoplay: {
     delay: 2500,
+  },
+  breakpoints: {
+    361: {
+      slidesPerView: 1,
+      spaceBetween: 8,
+    },
   },
 });
 

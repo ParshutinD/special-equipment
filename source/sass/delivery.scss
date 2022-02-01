@@ -8,6 +8,11 @@
 .delivery-block-mySwiper2 {
   height: 416px;
   max-width: 1005px;
+
+  @media (max-width: $mobile-width) {
+    max-width: 294px;
+    max-height: 238px;
+  }
 }
 
 .delivery-block-mySwiper {
@@ -15,6 +20,10 @@
   max-width: 1005px;
   box-sizing: border-box;
   padding: 10px 0;
+
+  @media (max-width: $mobile-width) {
+    max-width: 294px;
+  }
 }
 
 .delivery-block-mySwiper .delivery-block-slide-thumb-active {
@@ -88,6 +97,11 @@
   line-height: 88px;
   padding-top: 71px;
   padding-bottom: 26px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 45px;
+    line-height: 55px;
+  }
 }
 
 .delivery-block__title {
@@ -99,8 +113,13 @@
   padding-top: 71px;
   padding-bottom: 42px;
   padding-left: 150px;
-}
 
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 29px;
+    padding-left: 0;
+  }
+}
 .delivery-block__subtitle {
   @include Montserrat;
   font-style: normal;
@@ -113,6 +132,12 @@
 
   &:not(:last-child) {
     padding-bottom: 43px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    line-height: 130.4%;
+    padding-left: 0;
   }
 }
 
@@ -138,4 +163,9 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 150px;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
